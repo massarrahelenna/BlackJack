@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-register">
+        <h2>Bem-vindo ao Blackjack!</h2>
+        <button id="register-btn">Registrar</button>
+        <button id="login-btn">Login</button>
+        <div id="register-form" class="form hidden">
+            <h3>Registrar</h3>
+            <input type="text" id="register-name" placeholder="Nome">
+            <input type="password" id="register-password" placeholder="Senha">
+            <button id="submit-register">Registrar</button>
+        </div>
+        <div id="login-form" class="form hidden">
+            <h3>Login</h3>
+            <input type="text" id="login-name" placeholder="Nome">
+            <input type="password" id="login-password" placeholder="Senha">
+            <button id="submit-login">Login</button>
+        </div>
+    </div>
+    <div id="game-interface" class="hidden">
+        <h2>Blackjack</h2>
+        <div id="game-info">
+            <p id="balance-info">Saldo: </p>
+            <p id="bet-info">Aposta: </p>
+        </div>
+        <div id="hands">
+            <div id="player-hand" class="hand">
+                <h3>Sua Mão</h3>
+                <div id="player-cards" class="cards"></div>
+                <p id="player-hand-value"></p>
+            </div>
+            <div id="dealer-hand" class="hand">
+                <h3>Mão do Dealer</h3>
+                <div id="dealer-cards" class="cards"></div>
+                <p id="dealer-hand-value"></p>
+            </div>
+        </div>
+        <div id="controls">
+            <input type="number" id="bet-amount" placeholder="Valor da Aposta">
+            <button id="place-bet-btn">Apostar</button>
+            <button id="hit-btn" class="hidden">Pedir Carta</button>
+            <button id="stand-btn" class="hidden">Parar</button>
+        </div>
+        <div id="result"></div>
+        <button id="ranking-btn">Ver Ranking</button>
+        <button id="logout-btn">Sair</button>
+    </div>
+    <div id="ranking" class="hidden">
+        <h2>Ranking</h2>
+        <div id="ranking-list"></div>
+        <button id="back-btn">Voltar</button>
+    </div>
+</html>
